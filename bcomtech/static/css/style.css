@@ -69,7 +69,7 @@ a.none:hover {text-decoration: none;}
 }
 
 @media (min-width:769px) {
-    .boxes_area div[class*="col-"]:after {content: " ";display: block;position: absolute;top: 0;right: 0;width: 1px;height: 100%;background-color: #ebebeb;}
+    .boxes_area div[class*="col-"]:after {content: " ";display: block;position: absolute;top: 0;right: 0;width: 0.1em;height: 100%;background-color: #ebebeb;}
     .boxes_area div[class*="col-"]:last-child:after {display: none;}    
 }
 
@@ -327,8 +327,8 @@ p.text {color: #666;}
  }
 #copyright p, #copyright ul {margin: 0;float: left;font-size: 12px;}
 #copyright a {color: #fff;font-size: 12px;}
-.site-footer li a:hover {color:#ae101e;}
-ul.big li {float: left;width: 49%;}
+.site-footer li a:hover {color:#fff;}
+ul.big li { width: 59%;}
 ul.big li:nth-child(2n) {margin-left: 2%;}
 
 @media (max-width:462px) {.fbox:last-child {margin-top: 20px;float: left;width: 100%;}}
