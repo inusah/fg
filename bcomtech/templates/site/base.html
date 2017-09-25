@@ -72,8 +72,8 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script
                                     <li><a href="#" title="">Managed IT</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#" title="">Portfolio</a></li>
-                            <li><a href="#" title="">About</a></li>
+                            {% block portfolioMenuItem %} <li><a href="{{url_for('site.portfolio')}}" title="">Portfolio</a></li> {% endblock portfolioMenuItem %}
+                            {% block aboutMenuItem %}<li><a href="{{url_for('site.about')}}" title="">About</a></li>{% endblock aboutMenuItem %}
                             {% block contactMenuItem %}<li class=""><a href="{{url_for('site.contact')}}" title="">Contact</a></li>{% endblock contactMenuItem %}
                         </ul>                           
                     </div><!-- /.navbar-collapse -->                
@@ -89,8 +89,8 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script
             <div class="container">
                 <div class="newsletter-wthree">
                     <h3>Sign up For Newsletter</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
-                    <form action="#" method="post">
+                    <p></p>
+                    <form action="#" method="post" class="col-sm-12">
                         <input type="text" placeholder="Your Mail" name="Your Mail" required="">
                         <input type="submit" value="Sign Up">
                     </form>
@@ -145,7 +145,6 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script
                             <li><a href="#">home</a></li>
                             <li><a href="#">portfolio</a></li>
                             <li><a href="#">contact</a></li>
-
                         </ul>
                     </div>
                 </div>

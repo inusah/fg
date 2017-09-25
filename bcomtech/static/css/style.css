@@ -91,8 +91,12 @@ a.none:hover {text-decoration: none;}
 .box i {position: absolute;right: 0;top: 0;margin: 0;color: #ae101e;font-size: 45px;}
 .boxes_area h3 {font-size: 16px;font-weight: 500;margin-top: 0;margin-bottom: 18px;}
 .services {padding-top: 50px;padding-bottom: 50px;}
-.no-padding {
+.s-style {
     padding: 0;
+}
+.s-style:hover {
+    opacity: .8;
+    cursor: pointer;
 }
 
 .section-title {
@@ -112,7 +116,6 @@ a.none:hover {text-decoration: none;}
  
 }*/
 .service-content {  width: 100%; margin-top: 5em;}
-.service-content .container .radius{ border-radius: 25px;}
 .services p.desc, .choose p.desc {text-align: center;font-size: 13px;margin-bottom: 20px;}
 .services .media {margin-top: 15px 0px; height: 25em;padding: 4em 2em; text-align: center;}
 .services .media i {font-size: 45px;color: #ae101e;}
@@ -515,6 +518,7 @@ ul.bc_address i.fa.fa-map-marker, ul.bc_address i.fa.fa-envelope-o, ul.bc_addres
     background: #CE254B;
     text-align: center;
 }
+
 .newsletter-wthree p {
     font-size: 0.91em;
     color: rgb(255, 255, 255);
@@ -554,6 +558,20 @@ input[type="submit"] {
     -webkit-appearance: button;
     cursor: pointer;
 }
+@media (max-width: 640px){
+    .newsletter-wthree p {
+        width: 100%;
+    }
+    .newsletter-wthree input[type="text"] {
+    width: 50%; 
+    }
+    .newsletter-wthree h3 {
+    font-size: 2em;
+    }
+    .newsletter-wthree p {
+    width: 100%;
+    }
+}
 
 /*-- // news letter--*/
 
@@ -567,7 +585,7 @@ footer.site-footer p a {color: #666;}
 p.text {color: #666;}
 #copyright {color: #ccc;background: #404040; padding: 15px 0;font-size: 12px;margin-top: 20px; }
 #copyright .container {
-     padding: 14px 0px 13px 0px;
+     //padding: 14px 0px 13px 0px;
  }
 #copyright p, #copyright ul {margin: 0;float: left;font-size: 12px;}
 #copyright a {color: #fff;font-size: 12px;}
