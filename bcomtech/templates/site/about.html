@@ -1,0 +1,30 @@
+{% extends 'site/base.html' %}
+{% block aboutMenuItem %}<li class="active"><a href="{{url_for('site.about')}}" title="">About</a></li>{% endblock aboutMenuItem %}
+    {% block content %}
+    
+
+
+<div class="bread_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <ol class="breadcrumb">
+                        <li><a href="{{url_for('site.home')}}" title="Post">Home</a></li>
+                        <li class="active">About</li>
+                    </ol>                    
+                </div>
+            </div>
+        </div>
+    </div> 
+    <main class="site-main category-main">
+        <div class="container">
+            <div class="row">
+                <section class="category-content col-sm-9">
+                    <h2 class="category-title">ABOUT US</h2>
+                </section>
+            </div>
+        </div>
+    <!-- about -->
+	<!-- //about -->
+    </main>
+    {% endblock content %}
