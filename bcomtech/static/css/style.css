@@ -14,12 +14,12 @@ a.none:hover {text-decoration: none;}
     background-size: cover;
     background-repeat: no-repeat;
     background-position:100% 100%;
-    background: rgba(185, 50, 58, .2);
+    background: rgba(47, 83, 161, .2);
 }
 .navigation {
     position: relative;
 }
-.top {background-color: rgb(206, 37, 75);padding: 1em 0em;color: #fff;}
+.top {background-color: rgb(47,83,161);padding: 1em 0em;color: #fff;}
 .top p {margin: 0;}
 .top ul {margin: 0;padding: 0;}
 .top li i {color: #fff;}
@@ -34,12 +34,13 @@ a.none:hover {text-decoration: none;}
 .navbar-default .navbar-nav > li > a {color: #000;font-weight: bold;font-size: 1em;}
 .navbar-default .navbar-nav > li > a:hover {background-color: transparent; color: rgb(206, 37, 75);}
 .navbar-default .navbar-nav > .open > a,.navbar-default .navbar-nav > .open > a:hover,.navbar-default .navbar-nav > .open > a:focus {background-color: transparent;color: #ae101e;}
-.navbar-default .navbar-nav .active > a,.navbar-default .navbar-nav .active > a:hover,.navbar-default .navbar-nav .active > a:focus {color: rgb(206, 37, 75);background-color: transparent;}
+.navbar-default .navbar-nav .active > a,.navbar-default .navbar-nav .active > a:hover,.navbar-default .navbar-nav .active > a:focus {color: rgb(47, 83, 161);background-color: transparent;}
 .navbar-default .navbar-toggle {margin: 10px 0 0 15px;}
 .navbar-default .navbar-toggle,.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus {border: none;background: #f3f3f3;}
 .navbar-default .navbar-toggle i {font-size: 31px;}
 .navbar-default .navbar-collapse {float: right;border-top: none;padding-left: 0;padding-right: 0;}
 .navbar-brand>img {padding: 5px;}
+.navbar-brand>img {padding-top: 15px;}
 
 @media screen and (max-width: 768px) {.navbar-default .navbar-collapse {padding-left: inherit;padding-right: inherit;}}
 @media screen and (max-width: 992px) {.navbar-default .navbar-collapse {width: 100%;margin-left: 0;margin-right: 0;max-height: none;}}
@@ -62,7 +63,7 @@ a.none:hover {text-decoration: none;}
 /* Hero */
 .hero_area {background-position: center center;background-repeat: no-repeat;background-size: cover;height: 475px;padding: 0;}
 .hero_content {padding: 120px 0;}
-.hero_content h1 {text-shadow: 1px 1px 2px rgba(0,0,0,0.75);color: #b1233a;font-weight: 700;font-size: 32px;}
+.hero_content h1 {text-shadow: 1px 1px 2px rgba(0,0,0,0.75);color: #2f53a1;font-weight: 700;font-size: 32px;}
 .hero_content h2 {text-shadow: 1px 1px 2px rgba(0,0,0,0.25);color: #000;font-weight: 700;font-size: 22px;margin-top: 0;width: 45%;line-height: 38px;}
 
 /* Boxes */
@@ -71,7 +72,7 @@ a.none:hover {text-decoration: none;}
     background-color: rgba(211, 213, 213, 0.6);
 }
 .box {position: relative;}
-.box h3 {position: relative;margin-bottom: 20px;padding-bottom: 20px;color: rgb(206, 37, 75);}
+.box h3 {position: relative;margin-bottom: 20px;padding-bottom: 20px;color: rgb(47, 83, 161);}
 .boxes-area-icon{
     position: relative;
     height: 64px;
@@ -87,7 +88,7 @@ a.none:hover {text-decoration: none;}
 }
 
 /* Home */
-.home_content h2:after,.box h3:after {content: '';position: absolute;width: 30px;background-color: rgb(206, 37, 75);height: 2px;left: 0;bottom: 0;}
+.home_content h2:after,.box h3:after {content: '';position: absolute;width: 30px;background-color: rgb(47, 83, 161);height: 2px;left: 0;bottom: 0;}
 .box i {position: absolute;right: 0;top: 0;margin: 0;color: #ae101e;font-size: 45px;}
 .boxes_area h3 {font-size: 16px;font-weight: 500;margin-top: 0;margin-bottom: 18px;}
 .services {padding-top: 50px;padding-bottom: 50px;}
@@ -328,8 +329,8 @@ i.s-number { position: absolute; top: 0; left: 0;}
     -ms-border-radius: 50%;
 }
 .callbacks_here a:after{
-	background: #b9323a;
-    border: 2px solid #b9323a;
+	background: #2f53a1;
+    border: 2px solid #2f53a1;
 }
 
 /* News */
@@ -515,7 +516,7 @@ ul.bc_address i.fa.fa-map-marker, ul.bc_address i.fa.fa-envelope-o, ul.bc_addres
 /*-- newsletter --*/
 .newsletter {
     padding: 5em 0em;
-    background: #CE254B;
+    background: #2f53a1;
     text-align: center;
 }
 
