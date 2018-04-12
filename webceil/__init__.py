@@ -1,6 +1,6 @@
 from flask import Flask
 
-from bcomtech.site import site
+from webceil.site import site
 
 app = Flask(__name__)
 
