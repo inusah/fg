@@ -61,7 +61,9 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script
                     <div class="collapse navbar-collapse" id="bs-navbar-collapse">
                         <ul class="nav navbar-nav main-navbar-nav">
                             {% block homeMenuItem %}<li class=""><a href="{{url_for('site.home')}}" title="">Home</a></li>{% endblock homeMenuItem %}
-                            <li class="dropdown">
+                            {% block servicesMenuItem %} <li id="smenu" style="cursor: pointer;"><a>Services</a></li> {% endblock servicesMenuItem %}
+
+                            <!--<li class="dropdown">
                                 <a href="#" title="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#" title="">Web Design & Development</a></li>
@@ -71,8 +73,9 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script
                                     <li><a href="#" title="">E-voting</a></li>
                                     <li><a href="#" title="">Managed IT</a></li>
                                 </ul>
-                            </li>
-                            {% block portfolioMenuItem %} <li><a href="{{url_for('site.portfolio')}}" title="">Portfolio</a></li> {% endblock portfolioMenuItem %}
+                            </li>-->
+                            <!--{% block portfolioMenuItem %} <li><a
+                                href="{{url_for('site.portfolio')}}" title="">Portfosio</a></li> {% endblock portfolioMenuItem %}-->
                             {% block aboutMenuItem %}<li><a href="{{url_for('site.about')}}" title="">About</a></li>{% endblock aboutMenuItem %}
                             {% block contactMenuItem %}<li class=""><a href="{{url_for('site.contact')}}" title="">Contact</a></li>{% endblock contactMenuItem %}
                         </ul>                           
@@ -107,7 +110,7 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script
             <div class="row">
                 <div class="col-md-6 col-sm-6 col-xs-12 fbox">
                     <h4>About Us</h4>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam congue lectus diam, sit amet cursus massa efficitur sed. </p>
+            <p class="text">Registered as Webceil IT solutions Limited in Ghana, we are a Tamale based IT consultancy firm with diverse expertise in web based applications, websites, computer repair and networking.</p>
                     <ul class="list-inline">
                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -117,18 +120,18 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script
                 <div class="col-md-3 col-sm-6 col-xs-12 fbox">
                     <h4>SERVICES</h4>
                     <ul >
-                        <li><a href="#" title="">Web Design & Development</a></li>
-                        <li><a href="#" title="">Software Development</a></li>
-                        <li><a href="#" title="">Managed IT</a></li>
-                        <li><a href="#" title="">IT Consultancy</a></li>
-                        <li><a href="#" title="">E-voting Software Leasing</a></li>
-                        <li><a href="#" title="">IT Training</a></li>
+                        <li><a  title="">Web Design & Development</a></li>
+                        <li><a  title="">Software Development</a></li>
+                        <li><a  title="">Managed IT</a></li>
+                        <li><a  title="">IT Consultancy</a></li>
+                        <li><a  title="">E-voting Software Leasing</a></li>
+                        <li><a  title="">IT Training</a></li>
                     </ul>
                 </div>
                 
                 <div class="col-md-3 col-sm-6 col-xs-12 fbox">
                     <h4>CONTACT</h4>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="text">Adjacent DVLA, Tamale-Techiman N10 Road, Lamashegu, Tamale</p>
                     <p><a href="tel:+233372001924"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> +233 (0)372001924</a></p>
                     <p><a href="mailto:support@webceil.com"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> support@webceil.com</a></p>
                 </div>
@@ -170,6 +173,7 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script
             next.children(':first-child').clone().appendTo($(this));
           }
         });        
+        
     </script>
 </body>
 </html>

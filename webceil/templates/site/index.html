@@ -111,10 +111,10 @@
     </header>
     <main class="site-main">
      
-        <section class="services">
+        <section class="services" id="services">
             <h2 class="section-title">Services</h2>
             <p class="desc">A wide range of services and support to cater for your organization's IT needs</p>
-            <div class="service-content">
+            <div class="service-content" >
                 <div class="container">
                     <div class="row">
                         <div class="radius">
@@ -228,6 +228,14 @@
         </section> -->
     </main>
     <div class="clear-fix"></div>
-     
+    <script>
+        var smenu = document.getElementById('smenu');
+        smenu.onclick = scrollTo
+        function scrollTo(){
+            var elmnt = document.getElementById("services");
+            elmnt.scrollIntoView();
+
+        }; 
+    </script> 
     {% endblock content %}
     
