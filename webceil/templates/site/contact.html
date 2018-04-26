@@ -1,5 +1,6 @@
 {% extends 'site/base.html' %}
     {% block contactMenuItem %}<li class="active"><a href="{{url_for('site.contact')}}" title="">Contact</a></li>{% endblock contactMenuItem %}
+    {% block servicesMenuItem %} <li id="smenu" style="cursor: pointer;"><a href="{{url_for('site.home', section='services')}}">Services</a></li> {% endblock servicesMenuItem %}
     {% block content %}
     
 
