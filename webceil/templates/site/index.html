@@ -242,6 +242,13 @@
         }
         if(getUrlVar('section') === 'services')
                 scrollTo();
+        
+        $(function() {
+            $('.overlay').lazy({
+                placeholder: "data:{{url_for('static', filename='img/loading.gif')}}"
+            });
+        });
+        console.log("{{url_for('static', filename='img/loading.gif')}}");
     </script> 
     {% endblock content %}
     
